@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Wextra -Werror -std=c11 -pedantic -c "$CFILE" -o "$CFILE.o"
+gcc -Wall -Wextra -Werror -std=c11 -pedantic -c $CFILE.c -o $CFILE.o

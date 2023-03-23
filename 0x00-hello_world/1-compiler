@@ -1,2 +1,12 @@
 #!/bin/bash
-gcc -c $CFILE.o -o $CFILE
+# Check that the C file name variable has been set
+if [ -z "$CFILE" ]; then
+  echo "C file name variable not set."
+  exit 1
+fi
+
+# Define the name of the output file
+OUTPUT_FILE="$(basename "$CFILE" .c).o"
+
+# Compile the C file into an object file without linking
+gcc -Wall -Wextra -Werror -std=c11 -pedantic -c "$CFILE" -o "$OUTPUT_FILE"

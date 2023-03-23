@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -pedantic -s $CFILE
+gcc  -S $CFILE

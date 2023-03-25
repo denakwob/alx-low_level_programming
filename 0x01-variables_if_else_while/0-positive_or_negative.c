@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - prints random numbers
- * @n: integer argument
+ * @n: integer
  *
  * Return: 0 upon success
  *

@@ -19,7 +19,7 @@ int main(void)
 	}
 	for (b = 65; b <= 90; b++)
 	{
-		puthchar(b);
+		putchar(b);
 	}
 	putchar('\n');
 	return (0);

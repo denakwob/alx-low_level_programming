@@ -10,7 +10,7 @@ int main(void)
 {
 	int a;
 	int b;
-	
+
 	for (a = 48; a <= 57; a++)
 	{
 		putchar(a);
@@ -21,4 +21,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}	
+}

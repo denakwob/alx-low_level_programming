@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
  * main - prints uppercase and lowercase alphabets
- * @a: for first for loop
- * @b: for second for loop
  *
  * Return: 0 for success
  *

@@ -4,7 +4,10 @@
 /**
  * main - prints random numbers
  * @n: the random value
+ *
  * Return: 0 upon success
+ *
+ * Author - Nana Obeng
  */
 int main(void)
 {
@@ -12,7 +15,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	
 	if(n > 0)
 	  {
 	    printf("%d is positive\n", n);

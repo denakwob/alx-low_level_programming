@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - prints the last digit
- * @n: integer argument
+ * 
  * @ldigit: last digit
  *
  * Return: 0 on success

@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - possible combinations of two digits
- * 
+ *
  * Return: 0 on success
  *
  * Author - Nana Obeng
@@ -18,7 +18,7 @@ int main(void)
 	{
 		for (j = i; j <= last_digit; j++)
 		{
-			if ( i != j)
+			if (i != j)
 			{
 				putchar(i + '0');
 				putchar(j + '0');

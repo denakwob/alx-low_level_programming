@@ -10,17 +10,23 @@ int main(void)
 {
 	int i;
 	int j;
+	int last_digit;
 
-	for (i = 48; i <= 57; i++)
+	last_digit = 9;
+
+	for (i = 0; i <= last_digit; i++)
 	{
-		for (j = 49; j <= 57; j++)
+		for (j = i; j <= last_digit; j++)
 		{
-			if ( i < j)
+			if ( i != j)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}

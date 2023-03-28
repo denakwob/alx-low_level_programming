@@ -14,11 +14,11 @@ int _islower(int c)
 
 	if (c >= 97 && c <= 122)
 	{
-		res = '1';
+		res =_putchar('1');
 	}
 	else
 	{
-		res = '0';
+		res = _putchar('0');
 	}
 	return res;
 }	

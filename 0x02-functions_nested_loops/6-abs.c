@@ -10,12 +10,12 @@
 int _abs(int a)
 {
 	/* local variabe for an absolute declaration */
-	int absl;
+	int abl;
 
 	if (a < 0)
 	{
-		absl = a * -1;
+		abl = a * -1;
 	       return (abl);
 	}
-	return (absl)
+	return (abl);
 }	

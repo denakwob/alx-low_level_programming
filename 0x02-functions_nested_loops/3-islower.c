@@ -9,16 +9,12 @@
  */
 int _islower(int c)
 {
-	/*local variable for response*/
-	int res;
-
 	if (c >= 97 && c <= 122)
 	{
-		res =_putchar('1');
+		return 1;
 	}
 	else
 	{
-		res = _putchar('0');
+		return 0;
 	}
-	return res;
 }	

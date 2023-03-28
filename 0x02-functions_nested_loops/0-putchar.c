@@ -2,17 +2,19 @@
 /**
  * main - prints _putchar
  * _putchar - writes the character c to stdout
- * @c: The character to print
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: On success 0.
+ * 
+ * Author - Nana Obeng
  */
 
 int main(void)
 {
+	/*this creates an array to store the characters as char*/
 	char str[] = "_putchar\n";
+	/*type of array length*/
 	int i;
-	
+	/*loops through array and prints each char until EOA*/
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);

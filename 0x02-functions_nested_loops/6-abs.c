@@ -15,7 +15,6 @@ int _abs(int a)
 	if (a < 0)
 	{
 		abl = a * -1;
-	       return (abl);
 	}
 	return (abl);
 }	

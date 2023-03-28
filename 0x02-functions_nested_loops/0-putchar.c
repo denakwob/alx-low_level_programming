@@ -1,6 +1,6 @@
-#include <unistd.h>
 #include "main.h"
 /**
+ * main - prints _putchar
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *
@@ -10,7 +10,13 @@
 
 int main(void)
 {
-	_putchar("_putchar");
+	char str[] = "_putchar \n";
+	int i;
+	
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 	return (0);
 }
 
@@ -18,4 +24,3 @@ int _putchar(char c)
 {
         return (write(1, &c, 1));
 }
-

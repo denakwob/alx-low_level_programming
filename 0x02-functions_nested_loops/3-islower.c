@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _islower - checks for lower case
+ * _islower - checks for lower case
  * @c: argument
  *
  * Return: on success 1

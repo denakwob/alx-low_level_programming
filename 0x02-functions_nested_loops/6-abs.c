@@ -16,5 +16,9 @@ int _abs(int a)
 	{
 		abl = a * -1;
 	}
+	else
+	{
+		abl = a;
+	}
 	return (abl);
 }	

@@ -40,8 +40,8 @@ void times_table(void)
 		/*	if (b != 9)
 			{
 				_putchar(',');
-			}
-		} */
+			}*/
+		}
 		/* Move to the next row */
 		_putchar('\n');
 	}

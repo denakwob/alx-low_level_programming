@@ -17,10 +17,6 @@ int print_last_digit(int a)
 		a = a * -1;
 	}
 
-	if (a == INT_MIN)
-	{
-		num = 8;
-	}
 	num = a % 10;
 	final_ans = num + '0';
 	_putchar(final_ans);

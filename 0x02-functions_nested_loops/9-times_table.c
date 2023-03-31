@@ -21,7 +21,7 @@ void times_table(void)
 			/* Calculate result of multiplication */
 			res = a * b;
 			/* If the result is less than 10, print a space and the result digit */
-			if (res < 10)
+			if (res < 9)
 			{
 				_putchar(res + '0');
 				_putchar(' ');

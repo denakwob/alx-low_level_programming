@@ -8,38 +8,38 @@
  */
 void times_table(void)
 {
-	// Declare variables for multiplication
+	/* Declare variables for multiplication */
 	int a;
 	int b;
 	int res;
-	//loop through rows
+	/* loop through rows */
 	for (a = 0; a <= 9; a++)
 	{
-		//loop through columns
+		/* loop through columns */
 		for (b = 0; b <= 9; b++)
 		{
-			// Calculate result of multiplication
+			/* Calculate result of multiplication */
 			res = a * b;
-			// If the result is less than 10, print a space and the result digit
+			/* If the result is less than 10, print a space and the result digit */
 			if (res < 10)
 			{
 				_putchar(' ');
 				_putchar(res + '0');
 			}
-			// If the result is greater than or equal to 10, print the tens digit, a space, and the ones digit
+			/* If the result is greater than or equal to 10, print the tens digit, a space, and the ones digit */
 			else
 			{
 				_putchar(' ');
 				_putchar(res / 10 + '0');
 				_putchar(res % 10 + '0');
 			}
-			// If we're not on the last column, print a comma
+			/* If we're not on the last column, print a comma */
 			if (b != 9)
 			{
 				_putchar(',');
 			}
 		}
-		// Move to the next row
+		/* Move to the next row */
 		_putchar('\n');
 	}
 }

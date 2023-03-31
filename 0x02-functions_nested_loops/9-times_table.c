@@ -23,8 +23,10 @@ void times_table(void)
 			/* If the result is less than 10, print a space and the result digit */
 			if (res < 10)
 			{
-				_putchar(' ');
 				_putchar(res + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			/* If result is <= 10, print tens digit,  space, and the ones digit */
 			else
@@ -32,14 +34,14 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(res / 10 + '0');
 				_putchar(res % 10 + '0');
+				_putchar(',');
 			}
 			/* If we're not on the last column, print a comma */
-			if (b != 9)
+		/*	if (b != 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
-		}
+		} */
 		/* Move to the next row */
 		_putchar('\n');
 	}

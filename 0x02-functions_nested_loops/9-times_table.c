@@ -25,9 +25,8 @@ void times_table(void)
 			{
 				_putchar(' ');
 				_putchar(res + '0');
-				_putchar(' ');
 			}
-			/* If the result is <= 10, print the tens digit, a space, and the ones digit */
+			/* If result is <= 10, print tens digit,  space, and the ones digit */
 			else
 			{
 				_putchar(' ');
@@ -38,6 +37,7 @@ void times_table(void)
 			if (b != 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		/* Move to the next row */

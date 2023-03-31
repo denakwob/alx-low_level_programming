@@ -13,7 +13,7 @@ int print_last_digit(int a)
 
 	num = abs(a) % 10;
 
-	if ( a == INT_MIN)
+	if (a == INT_MIN)
 	{
 		num = 8;
 	}

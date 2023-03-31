@@ -25,11 +25,11 @@ void times_table(void)
 			{
 				_putchar(' ');
 				_putchar(res + '0');
+				_putchar(' ');
 			}
-			/* If the result is greater than or equal to 10, print the tens digit, a space, and the ones digit */
+			/* If the result is <= 10, print the tens digit, a space, and the ones digit */
 			else
 			{
-				_putchar(' ');
 				_putchar(' ');
 				_putchar(res / 10 + '0');
 				_putchar(res % 10 + '0');

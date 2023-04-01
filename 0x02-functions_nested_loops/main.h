@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
+void print_times_table(int n);
 int _putchar(char c);
 void print_alphabet(void);
 int _islower(int c);

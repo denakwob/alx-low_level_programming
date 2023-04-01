@@ -8,39 +8,40 @@
  */
 void times_table(void)
 {
-	/* Declare variables for multiplication */
-	int a;
-	int b;
-	int res;
-	/* loop through rows */
-	for (a = 0; a <= 9; a++)
+	int x = 0; /* factor */
+	int y; /* count  */
+	int z; /* computed value */
+
+	while (x < 10)
 	{
-		/* loop through columns */
-		for (b = 0; b <= 9; b++)
+		y = 0;
+		while (y < 10)
 		{
-			/* Calculate result of multiplication */
-			res = a * b;
-			/* If the result is less than 10, print a space and the result digit */
-			if (res < 10)
+			z = x * y;
+
+			if (z > 9)
 			{
-				_putchar(res + '0');
-				_putchar(' ');
-				_putchar(' ');
+				_putchar(z / 10 + '0');
+				_putchar(z % 10 + '0');
 			}
-			/* If result is <= 10, print tens digit,  space, and the ones digit */
+			else if (y != 0)
+			{
+				_putchar(' ');
+				_putchar(z + '0');
+			}
 			else
 			{
-				_putchar(' ');
-				_putchar(res / 10 + '0');
-				_putchar(res % 10 + '0');
+				_putchar(z + '0');
 			}
-			/* If we're not on the last column, print a comma */
-			if (b != 9)
+
+			if (y != 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 			}
+			y++;
 		}
-		/* Move to the next row */
 		_putchar('\n');
+		x++;
 	}
 }

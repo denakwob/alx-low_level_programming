@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 2)
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			num = strtol(argv[i], &ptr, 10);
 			mul *= num;

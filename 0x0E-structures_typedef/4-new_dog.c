@@ -6,7 +6,6 @@
  * @name: name
  * @age: age
  * @owner: owner
- * @d: struct
  *
  * Return: 0
  * Author - Nana Obeng
@@ -26,7 +25,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
-		free(d);
+		//free(d);
 		return (NULL);
 	}
 	return (d);

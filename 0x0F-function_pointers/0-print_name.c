@@ -10,8 +10,11 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	name = malloc(sizeof(char) * (_strlen(name) + 1));
-	f(name);
+	if (f)
+	{
+		name = malloc(sizeof(char) * (_strlen(name) + 1));
+		f(name);
+	}
 }
 
 /**

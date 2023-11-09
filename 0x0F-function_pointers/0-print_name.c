@@ -10,6 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+	name = malloc(sizeof(char) * (_strlen(name) + 1));
 	f(name);
 }
 
@@ -44,7 +45,7 @@ int _strlen(char *string)
 	int count;
 
 	count = 0;
-	while(string[count] != '\0')
+	while (string[count] != '\0')
 	{
 		count++;
 	}

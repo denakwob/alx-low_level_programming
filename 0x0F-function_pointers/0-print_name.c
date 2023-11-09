@@ -19,7 +19,7 @@ void print_name(char *name, void (*f)(char *))
 /**
  * f - prints the name passed to it
  * @name: name
- */
+
 
 void f(char *name)
 {
@@ -40,7 +40,6 @@ void f(char *name)
  * @string: string
  *
  * Return: count
- */
 
 int _strlen(char *string)
 {
@@ -53,3 +52,4 @@ int _strlen(char *string)
 	}
 	return (count);
 }
+*/
